@@ -19,7 +19,7 @@ class Canvas {
     this.y_size = document.getElementById("y").value > 0 ? document.getElementById("y").value : 5;
     this.z_size = document.getElementById("z").value > 0 ? document.getElementById("z").value : 5;
     this.bombs = document.getElementById("bombs").value;
-    if (this.bombs > this.x_size * this.y_size * this.z_size) {
+    if (this.bombs >= this.x_size * this.y_size * this.z_size) {
       this.bombs = this.x_size * this.y_size * this.z_size - 1;
     }
     if (this.bombs < 0) {
